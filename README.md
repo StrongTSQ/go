@@ -1,24 +1,19 @@
-# README
+Chess Game Go
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A popular and ancient chess game for two players in which the aim is to surround more territory than the opponent.
 
-Things you may want to cover:
+Go was invented in China more than 2500 years ago.
 
-* Ruby version
+Go has extremely simple rules but results in extremely complex strategies.
 
-* System dependencies
+It has not been conquered by AI until the creation of AlphaGo in 2015.
 
-* Configuration
+The creation of AlphaGo brings new light to this old game.
 
-* Database creation
+Players benefits tremendously from its real-time win-rate and next move suggestions.
 
-* Database initialization
+Go is no longer a mystery black box and will gain more popularity in Enlightenment of young children.
 
-* How to run the test suite
+I am teaching my daughter Pony to play this game and code this game.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+We are just beginning and hope to apply AlphaGo-similar AI in it some day.
