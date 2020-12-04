@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dimension:</strong>
+  <%= @chessboard.dimension %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @chessboard.theme %>
+</p>
+
+<%= link_to 'Edit', edit_chessboard_path(@chessboard) %> |
+<%= link_to 'Back', chessboards_path %>
