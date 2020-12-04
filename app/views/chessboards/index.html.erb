@@ -1,7 +1,35 @@
+
+
+
+<!-- 画棋盘 - Draw Chessboard -->
 <center>
-  <%= image_tag 'chess-board.png', size: '675x600'%>
+  <div id='chessboard_container'><%= image_tag 'chess-board.png', size: '675x600', id: 'chessboard'%></div>
 </center>
+
+
+<!-- 谁是当前棋手？黑先白后- Who is current player? -->
+<%= hidden_field_tag 'current_player', 'black' %>
+
 <center>
-  <%= image_tag 'white-piece.png', size: '80x80'%>
-  <%= image_tag 'black-piece.png', size: '80x80'%>
+  <span id='white'><%= image_tag 'white-piece.png', size: '60x60'%></span>
+  <span id='black'><%= image_tag 'black-piece.png', size: '60x60'%></span>
 </center>
+
+<!-- 棋盒里的棋子 chess pieces in bucket -->
+<span id='white_piece' style='display: none'><%= image_tag 'white-piece.png', size: '30x30'%></span>
+<span id='black_piece' style='display: none'><%= image_tag 'black-piece.png', size: '30x30'%></span>
+
+
+
+<script>
+  $('#chessboard').bind('click', function(e){
+    if(isBlackTurn()){
+      chess_piece = pickUpBlack();
+      putOnChessboard(chess_piece, e.pageX, e.pageY);
+    }else{
+      chess_piece = pickUpWhite();
+      putOnChessboard(chess_piece, e.pageX, e.pageY);
+    }
+  });
+</script>
+
